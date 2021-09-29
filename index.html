@@ -1,40 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupinio projekto šablonas</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/navbar.js" defer></script>
+    <script src="js/sidebar.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grupinio projekto šablonas</title>
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/navbar.js" defer></script>
-  <script src="js/sidebar.js" defer></script>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container h-100">
-      <div class="d-flex h-100 justify-content-between">
-        <a href="#main" class="navbar__logo-container">
-          <img src="https://codeacademy.lt/wp-content/themes/codeacademy/dist/images/codeacademy-white.svg">
-        </a>
-        <div class="navbar__toggler">
-          <div class="navbar__toggler__line"></div>
-          <div class="navbar__toggler__line"></div>
-          <div class="navbar__toggler__line"></div>
-        </div>
-        <div class="navbar__navigation-container">
-          <ul class="navbar__navigation">
-            <li><a class="navbar__link active" href="index.html">HTML</a></li>
-            <li><a class="navbar__link" href="pages/display-types.html">Display types</a></li>
-            <li><a class="navbar__link" href="pages/flex.html">Flex</a></li>
-            <li><a class="navbar__link" href="pages/position.html">Position</a></li>
-            <li><a class="navbar__link" href="pages/grid.html">Grid</a></li>
-            <li><a class="navbar__link" href="pages/git.html">GIT</a></li>
-          </ul>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container h-100">
+        <div class="d-flex h-100 justify-content-between">
+          <a href="#main" class="navbar__logo-container">
+            <img
+              src="https://codeacademy.lt/wp-content/themes/codeacademy/dist/images/codeacademy-white.svg"
+            />
+          </a>
+          <div class="navbar__toggler">
+            <div class="navbar__toggler__line"></div>
+            <div class="navbar__toggler__line"></div>
+            <div class="navbar__toggler__line"></div>
+          </div>
+          <div class="navbar__navigation-container">
+            <ul class="navbar__navigation">
+              <li><a class="navbar__link active" href="index.html">HTML</a></li>
+              <li>
+                <a class="navbar__link" href="pages/display-types.html"
+                  >Display types</a
+                >
+              </li>
+              <li><a class="navbar__link" href="pages/flex.html">Flex</a></li>
+              <li>
+                <a class="navbar__link" href="pages/position.html">Position</a>
+              </li>
+              <li><a class="navbar__link" href="pages/grid.html">Grid</a></li>
+              <li><a class="navbar__link" href="pages/git.html">GIT</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-</body>
+    <main id="main" class="pt-navbar-height">
+      <div
+        class="container container--narrow container--with-sidebar-left mt-5"
+      >
+        <h1>Pagrindiniai HTML elementai</h1>
+        <p class="my-3">
+          HTML tai puslapio struktūra - turinys. Turiniui kurti naudojama
+          pagrindiniai HMTL elementai.
+        </p>
+
+        <div>
+          <h2>HTML elemento struktūra</h2>
+          <img src="/images/html-element-structure.png" alt="" />
+
+          <h3 class="my-3">Antraštės</h3>
+          <p>
+            Antraštės tai puslapio sekcijų įvardinimas - apibūdinimas. Antraštės
+            turi būti įvardintos mažėjimo tvarka, ir negalima praleisti jų
+            dydžių. h1 -> h2 -> h3
+          </p>
+        </div>
+
+        <div>
+          <h2 class="my-3">Elementų tipai; Display</h2>
+          <p class="mb-3">
+            <strong>CSS savybė display</strong> apibūdina, kaip bus
+            atvaizduojamas - išdėstomas HTML elementas.
+          </p>
+          <ul class="ml-3 ul">
+            <li><strong>inline</strong> - baigtinis tekstinis elementas</li>
+            <li>
+              <strong>inline-block</strong> - eilutės elementas, kuriam gali būt
+              nustatomi aukščio ir pločio nustatymai, bei paraštės.
+            </li>
+            <li>
+              <strong>block</strong> - elementai per visą tėvinio elemento plotį
+            </li>
+          </ul>
+
+          <h3 class="my-3">Dažniausiai naudojami inline elementai</h3>
+          <ul class="ml-3 ul">
+            <li><strong>span </strong>- bendrinis teksto elementas</li>
+            <li><strong>strong </strong>- paryškintas tekto elementas</li>
+            <li><strong>em </strong>- pasviręs teksto elementas</li>
+            <li><strong>a </strong>- nuoroda</li>
+            <li><strong>img </strong>- nuotrauka</li>
+          </ul>
+
+          <div>
+            <h3 class="my-3">Dažniausi inline-block elementai</h3>
+            <ul class="ml-3 ul">
+              <li>
+                <strong>input</strong> - vartotojo įvesties elementas
+                <ul class="ml-3 ul">
+                  <li><strong>type="text":</strong> <input type="text" /></li>
+                  <li>
+                    <strong>type="password":</strong> <input type="password" />
+                  </li>
+                  <li><strong>type="email":</strong> <input type="email" /></li>
+                  <li>
+                    <strong>type="number":</strong><input type="number" />
+                  </li>
+                  <li><strong>type="date":</strong> <input type="date" /></li>
+                  <li><strong>type="range":</strong> <input type="range" /></li>
+                </ul>
+              </li>
+              <li>
+                <strong>text-area: <textarea></textarea></strong>
+              </li>
+            </ul>
+          </div>
+
+          <div id="block-elements">
+            <h3 class="my-3">Dažniausi block elementai</h3>
+            <ul class="ml-3 ul">
+              <li><strong>div</strong> - bendrinis blokinis elementas</li>
+              <li><strong>header</strong> - viršutinis komponento elementas</li>
+              <li><strong>footer</strong> - apatinis komponento elementas</li>
+              <li><strong>section</strong> - pagrindinė puslapio sekcija</li>
+              <li><strong>article</strong> - potemės blokinis elementas</li>
+              <li><strong>aside</strong> - šoninis blokinis elementas</li>
+              <li><strong>p</strong> - pastraipos blokinis elementas</li>
+              <li><strong>h1-h6</strong> - antraščių blokiniai elementai</li>
+              <li>
+                <strong>form</strong> - vartotojo įvesčių gaubiamasis elementas
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer mt-5">
+        <p>All rights reserved CodeAcademy © 2021</p>
+      </footer>
+    </main>
+  </body>
+</html>

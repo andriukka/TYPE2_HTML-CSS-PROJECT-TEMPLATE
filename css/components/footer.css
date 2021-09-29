@@ -1,5 +1,10 @@
-.footer{
+.footer {
   height: var(--footer-height);
   position: relative;
   z-index: var(--z-index-footer);
+  background: var(--dark);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
